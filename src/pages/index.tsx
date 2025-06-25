@@ -1,5 +1,12 @@
-import React from "react"
+import Layout from "./Layout"
+import React from "react";
+
 
 export default function IndexPage() {
-  return <h1>Hello, Gatsby!</h1>
+  return (
+    <Layout>
+      <h1>Welcome to the Home Page</h1>
+      <p>This is the main content of the home page.</p>  
+    </Layout>
+  )
 }
