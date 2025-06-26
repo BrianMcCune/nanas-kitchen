@@ -5,9 +5,10 @@ import "../styles/index.css";
 export default function IndexPage() {
   return (
     <main className="landing">
-      <div className="img-overlay"></div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main content of the home page.</p>  
+      <div className="landing-content">
+        <h1>New Braunfel's Favorite</h1>
+        <h1>Fresh Breakfast Tacos</h1>
+      </div>
     </main>
   )
 }
