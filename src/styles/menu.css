@@ -1,5 +1,4 @@
 .menu {
-    background-color: cornflowerblue;
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     row-gap: 20px;
@@ -10,7 +9,8 @@
 
 .menu div {
     min-width: 300px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 10px;
 }
 
 .menu-header {
@@ -31,4 +31,26 @@ li {
 
 .menu .drinks li {
     break-inside: avoid;
+}
+
+.menu-header h1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-header h1::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 25px;
+    z-index: 0;
+    background-color: rgb(255, 212, 14, 0.8);
 }

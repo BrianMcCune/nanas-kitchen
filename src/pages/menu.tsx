@@ -6,7 +6,7 @@ const Menu = () => {
         <>
             <section className="menu">
                 <div className="menu-header">
-                    <h1>Nana's Kitchen Menu</h1>
+                    <h1><span>Nana's Kitchen Menu</span></h1>
                     <p><em>Each item is freshly made to order — please allow extra time during busy hours. Menu may vary depending on inventory or special occasions.</em></p>
                 </div>
                     
