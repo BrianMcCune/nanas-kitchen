@@ -3,7 +3,7 @@ import "../styles/menu.css";
 
 const Menu = () => {
     return ( 
-        <>
+        <div className="menu-background">
             <section className="menu">
                 <div className="menu-header">
                     <h1><span>Nana's Kitchen Menu</span></h1>
@@ -74,7 +74,7 @@ const Menu = () => {
                 </div>
 
             </section>
-        </>
+        </div>
      );
 }
  

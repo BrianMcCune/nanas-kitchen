@@ -1,3 +1,11 @@
+.menu-background {
+    background-image: url('../images/menu-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
 .menu {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
