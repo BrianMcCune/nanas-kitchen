@@ -11,7 +11,7 @@ const Menu = () => {
                 </div>
                     
                 <div>
-                    <h2>Breakfast Tacos</h2>
+                    <h2><span>Breakfast Tacos</span></h2>
                     <ul>
                         <li>Chorizo & Egg</li>
                         <li>Spam & Egg</li>
@@ -27,7 +27,7 @@ const Menu = () => {
                 </div>
 
                 <div>
-                    <h2>Weekend Specials</h2>
+                    <h2><span>Weekend Specials</span></h2>
                     <ul>
                         <li>Nana’s Taco (Bacon, Egg, Bean, Cheese)</li>
                         <li>Carne Guisada</li>
@@ -42,7 +42,7 @@ const Menu = () => {
                 </div>
 
                 <div>
-                    <h2>Menudo</h2>
+                    <h2><span>Menudo</span></h2>
                     <ul>
                         <li>Small (16 oz)</li>
                         <li>Large (32 oz)</li>
@@ -50,7 +50,7 @@ const Menu = () => {
                 </div>
 
                 <div>
-                    <h2>Add-Ons</h2>
+                    <h2><span>Add-Ons</span></h2>
                     <ul>
                         <li>Cheese</li>
                         <li>Beans</li>
@@ -60,7 +60,7 @@ const Menu = () => {
                 </div>
 
                 <div className='drinks'>
-                    <h2>Drinks</h2>
+                    <h2><span>Drinks</span></h2>
                     <ul>
                         <li>Big Red</li>
                         <li>Dr. Pepper</li>
