@@ -20,7 +20,8 @@ html, body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgb(255, 252, 248);
   color: #000;
 }
 
@@ -100,4 +101,9 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
   border: 2px solid rgb(250, 243, 232);
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
 }

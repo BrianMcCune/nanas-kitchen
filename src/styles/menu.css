@@ -1,0 +1,34 @@
+.menu {
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    row-gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(245, 240, 230);
+}
+
+.menu div {
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.menu-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.menu .drinks ul {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.menu .drinks li {
+    break-inside: avoid;
+}
