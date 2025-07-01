@@ -27,10 +27,12 @@ li {
 .menu .drinks ul {
     columns: 2;
     column-gap: 20px;
+    padding: 10px;
 }
 
 .menu .drinks li {
     break-inside: avoid;
+    margin-top: 0;
 }
 
 .menu-header h1 {
@@ -57,12 +59,13 @@ span {
 
 .menu div h2 {
     position: relative;
+    font-size: 1.75rem;
 }
 
 .menu div h2::after {
     content: '';
     position: absolute;
-    top: 18px;
+    top: 22px;
     left: 48%;
     transform: translateX(-50%);
     width: 100%;
