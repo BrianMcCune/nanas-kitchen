@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import nanaImg from '../images/nana.jpg';
 
 const About = () => {
     return ( 
         <div className="about-background">
+      <img src={nanaImg} alt="owner" className="owner" />
             <h1>Freshness in every order, family in every meal</h1>
             <p>
                 Family owned since 2021, we’re proud to be born and raised right here in New Braunfels. 
