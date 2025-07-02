@@ -1,10 +1,9 @@
-
-
 .about-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+        padding: 20px;
 }
 
 .image-container {
@@ -26,5 +25,32 @@
     gap: 50px;
     width: 50%;
     min-width: 500px;
-    max-width: 800px;
+    max-width: 600px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.about-header-one {
+    color: inherit;
+}
+
+.about-header-two {
+    color: rgb(206, 33, 47);
+}
+
+.about-us-button {
+  background-color: rgb(206, 33, 47);
+  color: rgb(250, 243, 232);
+  padding: 15px 140px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 2px solid rgb(250, 243, 232);
+  text-align: center;
+  width: 500px;
+  align-self: center;
 }
