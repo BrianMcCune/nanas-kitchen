@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import nanaImg from '../images/nana.jpg';
+import nanaImg from '../images/nana.avif';
 import "../styles/about.css";
 
 const About = () => {
