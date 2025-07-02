@@ -1,5 +1,6 @@
 .menu-background {
-    background-image: url('../images/menu-background.jpg');
+    /* background-image: url('../images/menu-background.jpg'); */
+    background-image: url('../images/menu-background.avif');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

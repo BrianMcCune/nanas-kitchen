@@ -69,7 +69,8 @@ button {
   font-family: 'Fredoka One', cursive;
   height: calc(100vh - 120px);
   width: 100%;
-  background-image: url('../images/nanasbackground.png');
+  /* background-image: url('../images/nanasbackground.png'); */
+  background-image: url('../images/nanasbackground.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
