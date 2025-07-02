@@ -1,0 +1,30 @@
+
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content {
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    min-width: 500px;
+    max-width: 800px;
+}
