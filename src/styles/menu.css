@@ -93,6 +93,7 @@ span {
     .menu {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
         row-gap: 0px;
+        width: 90%;
     }
     .menu div {
         margin: 0px auto;
