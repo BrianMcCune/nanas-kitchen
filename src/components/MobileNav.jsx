@@ -41,8 +41,8 @@ const MobileNav = () => {
   return (
     <nav className="mobile-nav">
         <div className="mobile-logo-container">
-            <h1>Nana's Kitchen</h1>
-            <img src={icon} alt="Logo" className="mobile-logo" />
+            <h1><Link to="/">Nana's Kitchen</Link></h1>
+            <Link to="/"><img src={icon} alt="Logo" className="mobile-logo" /></Link>
         </div>
         <div className="hamburger" onClick={() => handleMobileNav()}>
         <div className="lineOne"></div>
