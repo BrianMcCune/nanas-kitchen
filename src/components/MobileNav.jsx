@@ -20,7 +20,7 @@ const MobileNav = () => {
       opacity: 1,
       duration: 0.2,
       delay: 0.2,
-      backgroundColor: 'rgb(242, 238, 239)'
+      backgroundColor: 'rgb(255, 244, 222)'
     })
   }
 
