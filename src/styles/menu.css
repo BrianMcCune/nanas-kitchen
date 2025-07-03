@@ -92,5 +92,14 @@ span {
 @media only screen and (max-width: 980px) {
     .menu {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
+        row-gap: 0px;
     }
+    .menu div {
+        margin: 0px auto;
+        padding: 10px;
+    }
+    .menu-header h1::after {
+        width: 98%;
+    }
+
 }
