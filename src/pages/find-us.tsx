@@ -2,10 +2,18 @@ import React from 'react';
 import "../styles/find-us.css";
 import { IoLogoFacebook } from "react-icons/io";
 import { FaYelp } from "react-icons/fa";
+import SEO from '../components/seo';
 
 const FindUs = () => {
   return (
     <div className='find-us-section'>
+        <SEO
+            title="Find Us | Nana's Kitchen – Food Truck Location"
+            description="Where’s Nana's Kitchen today? Get directions, hours, and info on where to find our breakfast taco truck in New Braunfels."
+            pathname="/find-us"
+            image="../images/nanas-icon.png"
+        />
+
         <div className="map-container">
         <iframe
             className='map-iframe'

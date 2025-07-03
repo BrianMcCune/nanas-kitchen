@@ -1,21 +1,25 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
   siteMetadata: {
-    title: `nanas kitchen`,
-    description: ``,
-    author: ``,
-    siteUrl: `https://example.com`,
+    title: `Nana's Kitchen`,
+    description: `New Braunfels' favorite food truck serving up hot, handmade breakfast tacos, fresh coffee, and local flavor daily. Taste the tradition with every bite at Nana's Kitchen.`,
+    author: `Nana's Kitchen | New Braunfels Breakfast Tacos`,
+    siteUrl: `https://your-actual-domain.com`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,20 +27,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Nana's Kitchen`,
+        short_name: `Nana`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#fff8e1`,
         display: `minimal-ui`,
-        icon: `src/images/nanas-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/nanas-icon.png`,
       },
     },
   ],

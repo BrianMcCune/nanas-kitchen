@@ -2,10 +2,18 @@ import React from 'react';
 import { Link } from 'gatsby';
 import nanaImg from '../images/nana.avif';
 import "../styles/about.css";
+import SEO from '../components/seo';
 
 const About = () => {
     return ( 
         <div className="about-section">
+            <SEO
+                title="About Us | Nana's Kitchen – Our Story"
+                description="Learn the story behind Nana's Kitchen – a family-run food truck serving love and breakfast tacos to New Braunfels since day one."
+                pathname="/about"
+                image="../images/nanas-icon.png"
+            />
+
             <div className='image-container'>
                 <img src={nanaImg} alt="owner" className="owner" />
             </div>

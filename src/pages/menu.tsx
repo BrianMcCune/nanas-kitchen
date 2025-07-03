@@ -1,9 +1,17 @@
 import React from 'react';
 import "../styles/menu.css";
+import SEO from '../components/seo';
 
 const Menu = () => {
     return ( 
         <div className="menu-background">
+            <SEO
+                title="Menu | Nana's Kitchen – Breakfast Tacos & More"
+                description="Explore Nana's full menu of breakfast tacos, migas, and local favorites. Always made hot and fresh!"
+                pathname="/menu"
+                image="../images/nanas-icon.png"
+            />
+
             <section className="menu">
                 <div className="menu-header">
                     <h1><span>Nana's Kitchen Menu</span></h1>
