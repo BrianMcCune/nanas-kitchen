@@ -4,6 +4,7 @@
     align-items: center;
     gap: 50px;
     padding: 20px;
+    line-height: 1.65;
 }
 
 .image-container {
@@ -29,7 +30,7 @@
 }
 
 .about-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 20px;
     font-family: 'Fredoka One', cursive;
     font-weight: 400;
