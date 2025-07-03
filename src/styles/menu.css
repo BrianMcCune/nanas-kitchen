@@ -88,3 +88,9 @@ span {
     /* background-color: rgb(197, 250, 254); */
     background-color: rgb(223, 24, 42, 0.5);
 }
+
+@media only screen and (max-width: 980px) {
+    .menu {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
