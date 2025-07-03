@@ -24,6 +24,7 @@ html, body {
   /* background-color: #fff; */
   background-color: rgb(255, 252, 248);
   color: #000;
+  /* font-size: 16px !important; */
 }
 
 /* ===== Remove list styles ===== */
@@ -107,4 +108,5 @@ button {
 h2 {
     font-family: 'Fredoka One', cursive;
     font-weight: 400;
+    font-size: 1.75rem;
 }
