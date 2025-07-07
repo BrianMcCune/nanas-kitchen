@@ -95,6 +95,10 @@ button {
   color: rgb(206, 33, 47);
 }
 
+.landing-header {
+  overflow: hidden;
+}
+
 .landing-button {
   background-color: rgb(206, 33, 47);
   color: rgb(250, 243, 232);

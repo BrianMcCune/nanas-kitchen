@@ -2,8 +2,21 @@ import React from "react";
 import "../styles/index.css";
 import { Link } from 'gatsby';
 import SEO from "../components/seo";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export default function IndexPage() {
+
+    useGSAP(() => {
+        gsap.fromTo(".landing-content h1", {
+            y: 100
+        }, 
+        {
+            duration: 0.75,
+            y: 0,
+        });
+    });
+
   return (
     <main className="landing">
       <SEO
@@ -13,10 +26,12 @@ export default function IndexPage() {
         image="../images/nanas-icon.png"
       />
       <div className="landing-content">
-        {/* <h1>NEW BRAUNFEL'S FAVORITE</h1> */}
-        <h1>New Braunfels' Favorite</h1>
-        {/* <h1>FRESH BREAKFAST TACOS</h1> */}
-        <h1>Fresh Breakfast Tacos</h1>
+        <div className="landing-header">
+          <h1>New Braunfels' Favorite</h1>
+        </div>
+        <div className="landing-header">
+          <h1>Fresh Breakfast Tacos</h1>
+        </div>
       </div>
       <Link to="/menu" className="landing-button">
         View Menu

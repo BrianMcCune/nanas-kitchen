@@ -1,8 +1,20 @@
 import React from 'react';
 import "../styles/menu.css";
 import SEO from '../components/seo';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Menu = () => {
+
+    useGSAP(() => {
+        gsap.to(".menu-header", {
+            
+        });
+    });
+
+
+
+
     return ( 
         <div className="menu-background">
             <SEO
