@@ -9,11 +9,14 @@ export default function IndexPage() {
 
     useGSAP(() => {
         gsap.fromTo(".landing-content h1", {
-            y: 100
+            y: 70,
+            opacity: 0,
         }, 
         {
-            duration: 0.75,
+            delay: 0.2,
+            duration: 0.5,
             y: 0,
+            opacity: 1,
         });
     });
 
@@ -27,10 +30,10 @@ export default function IndexPage() {
       />
       <div className="landing-content">
         <div className="landing-header">
-          <h1>New Braunfels' Favorite</h1>
+          <h1 className="header-one">New Braunfels' Favorite</h1>
         </div>
         <div className="landing-header">
-          <h1>Fresh Breakfast Tacos</h1>
+          <h1 className="header-two">Fresh Breakfast Tacos</h1>
         </div>
       </div>
       <Link to="/menu" className="landing-button">
