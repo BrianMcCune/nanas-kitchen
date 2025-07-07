@@ -23,7 +23,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   /* background-color: #fff; */
   background-color: rgb(255, 252, 248);
-  color: #000;
+  color: rgb(30, 30, 30);
   /* font-size: 16px !important; */
 }
 
