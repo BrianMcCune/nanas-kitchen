@@ -1,19 +1,13 @@
+import menuImage from '../images/menu-background.avif';
 import React from 'react';
 import "../styles/menu.css";
 import SEO from '../components/seo';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+// import gsap from 'gsap';
+// import { useGSAP } from '@gsap/react';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
 
 const Menu = () => {
-
-    useGSAP(() => {
-        gsap.to(".menu-header", {
-            
-        });
-    });
-
-
-
 
     return ( 
         <div className="menu-background">
@@ -23,7 +17,9 @@ const Menu = () => {
                 pathname="/menu"
                 image="../images/nanas-icon.png"
             />
-
+            <div className="menu-background-image">
+                <img src={menuImage} alt="Nana's Kitchen Menu Background" />
+            </div>
             <section className="menu">
                 <div className="menu-header">
                     <h1><span>
