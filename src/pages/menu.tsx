@@ -14,12 +14,14 @@ const Menu = () => {
 
             <section className="menu">
                 <div className="menu-header">
-                    <h1><span>Nana's Kitchen Menu</span></h1>
-                    <p><em>Each item is freshly made to order — please allow extra time during busy hours. Menu may vary depending on inventory or special occasions.</em></p>
+                    <h1><span>
+                        <mark className='header-part-one'>Nana's Kitchen</mark> <div className='header-part-two'>Menu</div>
+                    </span></h1>
+                    <p className='disclaimer'><em>Each item is freshly made to order — please allow extra time during busy hours. Menu may vary depending on inventory or special occasions.</em></p>
                 </div>
                     
                 <div>
-                    <h2><span>Breakfast Tacos</span></h2>
+                    <h2 className='menu-title'><span>Breakfast Tacos</span></h2>
                     <ul>
                         <li>Chorizo & Egg</li>
                         <li>Spam & Egg</li>
@@ -35,7 +37,7 @@ const Menu = () => {
                 </div>
 
                 <div>
-                    <h2><span>Weekend Specials</span></h2>
+                    <h2 className='menu-title'><span>Weekend Specials</span></h2>
                     <ul>
                         <li>Nana’s Taco (Bacon, Egg, Bean, Cheese)</li>
                         <li>Carne Guisada</li>
@@ -50,7 +52,7 @@ const Menu = () => {
                 </div>
 
                 <div>
-                    <h2><span>Menudo</span></h2>
+                    <h2 className='menu-title'><span>Menudo</span></h2>
                     <ul>
                         <li>Small (16 oz)</li>
                         <li>Large (32 oz)</li>
@@ -58,7 +60,7 @@ const Menu = () => {
                 </div>
 
                 <div>
-                    <h2><span>Add-Ons</span></h2>
+                    <h2 className='menu-title'><span>Add-Ons</span></h2>
                     <ul>
                         <li>Cheese</li>
                         <li>Beans</li>
@@ -68,7 +70,7 @@ const Menu = () => {
                 </div>
 
                 <div className='drinks'>
-                    <h2><span>Drinks</span></h2>
+                    <h2 className='menu-title'><span>Drinks</span></h2>
                     <ul>
                         <li>Big Red</li>
                         <li>Dr. Pepper</li>
