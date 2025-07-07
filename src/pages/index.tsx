@@ -7,18 +7,27 @@ import { useGSAP } from '@gsap/react';
 
 export default function IndexPage() {
 
-    useGSAP(() => {
-        gsap.fromTo(".landing-content h1", {
-            y: 70,
-            opacity: 0,
-        }, 
-        {
-            delay: 0.2,
-            duration: 0.5,
-            y: 0,
-            opacity: 1,
-        });
-    });
+useGSAP(() => {
+  gsap.fromTo(".header-one", {
+    y: 50,
+    opacity: 0,
+  }, {
+    y: 0,
+    opacity: 1,
+    delay: 0.1,
+    duration: 0.5,
+  });
+
+  gsap.fromTo(".header-two", {
+    y: 50,
+    opacity: 0,
+  }, {
+    y: 0,
+    opacity: 1,
+    delay: 0.3,
+    duration: 0.5,
+  });
+});
 
   return (
     <main className="landing">
