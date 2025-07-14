@@ -76,6 +76,7 @@ li {
 .menu div h1  {
     position: relative;
     padding: 0 10px;
+    font-size: 2.25rem;
 }
 
 .menu div h1::after {
