@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import nanaImg from '../images/nana.avif';
+import nanaSmallImg from '../images/nana-small.avif';
 import "../styles/about.css";
 import SEO from '../components/seo';
 
@@ -15,7 +16,11 @@ const About = () => {
             />
 
             <div className='image-container'>
-                <img src={nanaImg} alt="owner" className="owner" />
+                <picture>
+                  <source media="(max-width: 600px)" srcSet={nanaSmallImg} />
+                  <source media="(min-width: 601px)" srcSet={nanaImg} />
+                  <img src={nanaImg} alt="owner" className="owner" width={600} height={400}/>
+                </picture>
             </div>
             <section className="about-content">
                 <h1><span className='about-header-one'>Freshness in every order,</span><span className='about-header-two'> family in every meal</span></h1>
@@ -34,5 +39,5 @@ const About = () => {
         </div>
      );
 }
- 
+
 export default About;
