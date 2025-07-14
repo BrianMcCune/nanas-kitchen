@@ -1,4 +1,6 @@
-import menuImage from '../images/menu-background.avif';
+import taco from '../images/taco.jpg';
+import menudo from '../images/menudo.jpg';
+import biscuit from '../images/biscuit.jpg';
 import React from 'react';
 import "../styles/menu.css";
 import SEO from '../components/seo';
@@ -17,14 +19,11 @@ const Menu = () => {
                 pathname="/menu"
                 image="../images/nanas-icon.png"
             />
-            <div className="menu-background-image">
-                <img src={menuImage} alt="Nana's Kitchen Menu Background" />
-            </div>
             <section className="menu">
                 <div className="menu-header">
-                    <h1><span>
-                        <mark className='header-part-one'>Nana's Kitchen</mark> <div className='header-part-two'>Menu</div>
-                    </span></h1>
+                    <span>
+                        <h1 className='header-part-one'>Nana's Kitchen</h1> <div className='header-part-two'>Menu</div>
+                    </span>
                     <p className='disclaimer'><em>Each item is freshly made to order — please allow extra time during busy hours. Menu may vary depending on inventory or special occasions.</em></p>
                 </div>
                     
@@ -58,7 +57,9 @@ const Menu = () => {
                         <li>Pork Tamales (½ dozen or dozen)</li>
                     </ul> 
                 </div>
-
+                <div className='taco-image-container'>
+                    <img src={taco} alt="barbacoa Tacos" className='taco-image' />
+                </div>
                 <div>
                     <h2 className='menu-title'><span>Menudo</span></h2>
                     <ul>
@@ -87,10 +88,20 @@ const Menu = () => {
                         <li>Water</li>
                         <li>Apple Juice</li>
                         <li>Orange Juice</li>
-                        <li>Glass Bottled Coke</li>
+                        <li>Bottled Coke</li>
                     </ul>
                 </div>
 
+                <div className='menudo-image-container'>
+                    <img src={menudo} alt="barbacoa Tacos" className='menudo-image' />
+                </div>
+                <div className='monthly-specials'>
+                    <h2 className='menu-title'><span>Homemade Biscuits</span></h2>
+                    <p className='biscuit-description'>Try our Biscuits and Gravy special on the first Friday of ever month</p>
+                    <div className='biscuit-image-container'>
+                        <img src={biscuit} alt="Biscuit" className='biscuit-image' />
+                    </div>
+                </div>
             </section>
         </div>
      );

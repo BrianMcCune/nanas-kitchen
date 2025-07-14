@@ -1,19 +1,7 @@
 .menu-background {
-    /* background-image: url('../images/menu-background.avif'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* min-height: 100vh; */
     padding: 20px;
     position: relative;
-}
-
-.menu-background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+    background-image: url('../images/menu-background.avif');
 }
 
 .menu-background-image img {
@@ -32,12 +20,12 @@
 
     background-image: url('../images/rice-paper.avif');
     background-repeat: repeat;
-    filter: brightness(1.1) contrast(0.85);
     line-height: 1.65;
 }
 
 .header-part-one {
     background-color: inherit;
+    width: fit-content;
 }
 
 .header-part-two {
@@ -67,6 +55,7 @@ li {
     columns: 2;
     column-gap: 20px;
     padding: 10px;
+    width: 300px;
 }
 
 .menu .drinks li {
@@ -75,25 +64,30 @@ li {
 }
 
 .menu-header h1 {
-    position: relative;
     margin-bottom: 20px;
+    margin: auto;
 }
 
-span {
+.menu-title {
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.menu div h1  {
     position: relative;
-    z-index: 1;
+    padding: 0 10px;
 }
 
-.menu-header h1::after {
+.menu div h1::after {
     content: '';
     position: absolute;
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 38%;
+    width: 100%;
     height: 25px;
     z-index: 0;
-    background-color: rgb(255, 212, 14, 0.8);
+    background-color: rgb(255, 212, 14, 0.5);
 }
 
 .menu div h2 {
@@ -105,12 +99,33 @@ span {
     content: '';
     position: absolute;
     top: 22px;
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100%;
     height: 25px;
     z-index: 0;
     background-color: rgb(223, 24, 42, 0.5);
+}
+
+.taco-image-container {
+    grid-column: 1 / -1;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.menudo-image-container {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.monthly-specials {
+    grid-column: 1 / -1;
+    width: 50%;
+}
+
+.biscuit-description {
+    margin: 10px 0;
+    font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 980px) {
