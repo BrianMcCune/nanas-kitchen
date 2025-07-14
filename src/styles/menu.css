@@ -1,7 +1,7 @@
 .menu-background {
     padding: 20px;
     position: relative;
-    background-image: url('../images/menu-background.avif');
+    /* background-image: url('../images/menu-background.avif'); */
 }
 
 .menu-background-image img {
@@ -127,6 +127,12 @@ li {
 .biscuit-description {
     margin: 10px 0;
     font-size: 1.25rem;
+}
+
+@media (min-width: 981px) {
+  .menu-background {
+    background-image: url('../images/menu-background.avif');
+  }
 }
 
 @media only screen and (max-width: 980px) {
