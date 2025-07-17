@@ -13,7 +13,7 @@ export default function IndexPage() {
   // Helper: check if today is special day
   function isSpecialDay(): boolean {
     const day = new Date().getDay();
-    return day === 0 || day === 4 || day === 6;
+    return day === 0 || day === 5 || day === 6;
   }
 
   // Animate popup in
