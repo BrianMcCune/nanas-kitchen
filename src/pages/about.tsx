@@ -19,7 +19,7 @@ const About = () => {
                 <picture>
                   <source media="(max-width: 600px)" srcSet={nanaSmallImg} />
                   <source media="(min-width: 601px)" srcSet={nanaImg} />
-                  <img src={nanaImg} alt="owner" className="owner" width={600} height={400}/>
+                  <img src={nanaImg} alt="owner" className="owner" />
                 </picture>
             </div>
             <section className="about-content">

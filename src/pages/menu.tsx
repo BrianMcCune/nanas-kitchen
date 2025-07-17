@@ -93,7 +93,7 @@ const Menu = () => {
                 </div>
 
                 <div className='menudo-image-container'>
-                    <img src={menudo} alt="barbacoa Tacos" className='menudo-image' />
+                    <img src={menudo} alt="menudo" className='menudo-image' />
                 </div>
                 <div className='monthly-specials'>
                     <h2 className='menu-title'><span>Homemade Biscuits</span></h2>
