@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "18": "^0.0.0",
     "@gsap/react": "^2.1.2",
     "gatsby": "^5.14.1",
     "gatsby-plugin-image": "^3.14.0",
