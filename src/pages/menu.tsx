@@ -98,7 +98,7 @@ const Menu = () => {
                 </div>
                 <div className='monthly-specials'>
                     <h2 className='menu-title'><span>Homemade Biscuits</span></h2>
-                    <p className='biscuit-description'>Try our Biscuits and Gravy special on the first Friday of ever month</p>
+                    <p className='biscuit-description'>Try our Biscuits and Gravy special on the first Friday of every month</p>
                     <div className='biscuit-image-container'>
                         <img src={biscuit} alt="Biscuit" className='biscuit-image' />
                     </div>
