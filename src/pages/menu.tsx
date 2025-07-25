@@ -33,7 +33,6 @@ const Menu = () => {
                         <li>Chorizo & Egg</li>
                         <li>Spam & Egg</li>
                         <li>Papas Rancheras</li>
-                        <li>Egg & Ranchero Sauce</li>
                         <li>Chorizo & Bean</li>
                         <li>Migas</li>
                         <li>Spicy Migas</li>
@@ -76,6 +75,7 @@ const Menu = () => {
                         <li>Beans</li>
                         <li>Potato</li>
                         <li>Bacon (2 strips)</li>
+                        <li>Egg & Ranchero Sauce</li>
                     </ul>
                 </div>
 
