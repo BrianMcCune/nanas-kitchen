@@ -7,6 +7,28 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
-}
+const React = require("react");
+
+exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
+  setHtmlAttributes({ lang: `en` });
+
+  setHeadComponents([
+    // GA4 script
+    <script
+      key="ga4"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MWFPKN7SKW"
+    />,
+    <script
+      key="ga4-inline"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MWFPKN7SKW');
+        `,
+      }}
+    />,
+  ]);
+};
