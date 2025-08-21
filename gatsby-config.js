@@ -39,13 +39,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-MWFPKN7SKW", // Your GA4 Measurement ID
-        head: true,                 // inject in <head>
-        anonymize: true,            // anonymize IPs
-        respectDNT: true,           // respect Do Not Track
-        enableWebVitalsTracking: true, // optional, tracks LCP, FID, CLS
+        trackingIds: ["G-MWFPKN7SKW"], // Your GA4 Measurement ID
+        pluginConfig: {
+          head: true, // injects in <head>
+        },
+        gtagConfig: {
+          anonymize_ip: true, // optional: anonymize IPs
+          send_page_view: true, // optional: track initial pageview
+        },
       },
     },
   ],
