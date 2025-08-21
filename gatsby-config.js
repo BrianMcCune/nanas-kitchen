@@ -4,9 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `Nana's Kitchen`,
-    description: `New Braunfels' favorite food truck serving up hot, handmade breakfast tacos, fresh coffee, and local flavor daily. Taste the tradition with every bite at Nana's Kitchen.`,
+    description: `New Braunfels' favorite food truck serving up hot, handmade breakfast tacos, fresh coffee, and local flavor daily.`,
     author: `Nana's Kitchen | New Braunfels Breakfast Tacos`,
-    siteUrl: `https://your-actual-domain.com`,
+    siteUrl: `https://your-actual-domain.com`, // replace with your live domain
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,13 +41,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "G-MWFPKN7SKW",
-        ],
+        trackingIds: ["G-MWFPKN7SKW"], // Your GA4 Measurement ID
         pluginConfig: {
-          head: true,
+          head: true, // injects in <head>
         },
       },
     },
   ],
-}
+};
