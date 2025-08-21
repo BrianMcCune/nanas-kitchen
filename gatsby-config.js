@@ -38,5 +38,16 @@ module.exports = {
         icon: `src/images/nanas-icon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-MWFPKN7SKW",
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 }
